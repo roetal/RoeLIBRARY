@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="SiteExample.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link href="Css/RoeStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="topnav" id="navbar" runat="server"></div>
+    <div class="container">
+        <asp:ContentPlaceHolder ID="SiteContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div class="footer">
+        <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>
+

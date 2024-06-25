@@ -1,0 +1,55 @@
+﻿<Page x:Class="Library.AddBookPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Library"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddBookPage">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="tb_maxid" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Margin="5" FontSize="16" Text="Add a book" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" Text="Book Name" VerticalAlignment="Center"/>
+        <TextBox x:Name="txt_name" Grid.Row="1" Grid.Column="1" Margin="72,0,71,5" Width="150" TextWrapping="Wrap" Height="27" VerticalAlignment="Bottom"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="5" Text="Author" VerticalAlignment="Center"/>
+        <ComboBox x:Name="cmb_Author" Grid.Row="1" Grid.Column="3" Margin="5" Width="150" ItemsSource="{Binding Authors}" DisplayMemberPath="Name" SelectedValuePath="Id"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Text="Genre" VerticalAlignment="Center"/>
+        <TextBox x:Name="txt_genre" Grid.Row="2" Grid.Column="1" Margin="5" Width="150" TextWrapping="Wrap" Height="27"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="2" Margin="5" Text="Price" VerticalAlignment="Center"/>
+        <TextBox x:Name="txt_price" Grid.Row="2" Grid.Column="3" Margin="5" Width="150" TextWrapping="Wrap" Height="27"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Margin="5" Text="Rental Price" VerticalAlignment="Center"/>
+        <TextBox x:Name="txt_rental_price" Grid.Row="3" Grid.Column="1" Margin="5" Width="150" TextWrapping="Wrap" Height="27"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="2" Margin="5" Text="Available Copies" VerticalAlignment="Center"/>
+        <TextBox x:Name="txt_Available_copies" Grid.Row="3" Grid.Column="3" Margin="5" Width="150" TextWrapping="Wrap" Height="27"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" Text="Bio" VerticalAlignment="Center"/>
+        <TextBox x:Name="txt_bio" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Margin="5" Width="400" TextWrapping="Wrap" Height="60" VerticalAlignment="Top"/>
+
+        <Button x:Name="btn_picture" Content="Add Picture" Grid.Row="5" Grid.Column="2" Margin="5" Width="150" Height="30" VerticalAlignment="Top" Click="btn_picture_Click" />
+
+        <Button Content="Check" Grid.Row="6" Grid.Column="3" Margin="5" Width="100" Height="30" VerticalAlignment="Top" Click="Button_Check"/>
+    </Grid>
+</Page>

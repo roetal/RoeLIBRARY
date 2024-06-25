@@ -1,0 +1,183 @@
+﻿/* RoeStyle.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../Images/library backround image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.topnav {
+    background-color: rgba(51, 51, 51, 0.8);
+    overflow: hidden;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+.container, .content-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.content-container {
+    text-align: center;
+}
+.login-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    .login-container h3 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .login-container table {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .login-container td {
+        padding: 10px;
+        text-align: left;
+        color: #333;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .login-container input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+#msg {
+    margin-top: 20px;
+    color: red;
+}
+
+
+
+.registration-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    direction: rtl;
+}
+
+    .registration-container h3 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .registration-container .row {
+        margin-bottom: 15px;
+        text-align: right;
+    }
+
+    .registration-container label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .registration-container input[type="text"],
+    .registration-container input[type="email"],
+    .registration-container input[type="tel"],
+    .registration-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .registration-container input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .registration-container input[type="submit"]:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+#errorMsg {
+    margin-top: 20px;
+    color: red;
+}

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddAuthorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddBookPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserItems.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewAuthors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewBooks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewUsers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddAuthorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddBookPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserItems.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewAuthors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewBooks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewUsers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
